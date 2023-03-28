@@ -1,0 +1,259 @@
+
+-----
+Test: test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-27 15:08:26.317205
+Start name method: select_product
+
+End time: 2023-03-27 15:08:31.789214
+End name method: select_product
+URL: https://nike-off.ru/
+
+-----
+
+-----
+Test: test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-27 15:08:31.790212
+Start name method: select_product1
+
+End time: 2023-03-27 15:08:33.581111
+End name method: select_product1
+URL: https://nike-off.ru/product/nike-air-jordan-4-military-black-dh6927_111/
+
+-----
+
+-----
+Test: test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-27 15:08:33.581111
+Start name method: select_product_page
+
+End time: 2023-03-27 15:08:36.824012
+End name method: select_product_page
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-27 15:08:36.825029
+Start name method: product_confirmation
+
+End time: 2023-03-27 15:08:41.590397
+End name method: product_confirmation
+URL: https://nike-off.ru/
+
+-----
+
+-----
+Test: test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-27 15:08:41.591411
+Start name method: authorization
+
+End time: 2023-03-27 15:08:50.204115
+End name method: authorization
+URL: https://nike-off.ru/my-account/
+
+-----
+
+-----
+Test: test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-27 15:08:50.206104
+Start name method: delet_product
+
+
+-----
+Test: test_cart_page.py::test_cart (call)
+Start time: 2023-03-27 15:08:51.408144
+Start name method: checking_menu_blazer
+
+End time: 2023-03-27 15:08:58.872781
+End name method: checking_menu_blazer
+URL: https://nike-off.ru/product-category/blazer/
+
+-----
+
+-----
+Test: test_cart_page.py::test_cart (call)
+Start time: 2023-03-27 15:08:58.872781
+Start name method: select_product_3
+
+End time: 2023-03-27 15:09:00.430013
+End name method: select_product_3
+URL: https://nike-off.ru/product/nike-blazer-low-sacai-classic-green-dd1877_001/
+
+-----
+
+-----
+Test: test_cart_page.py::test_cart (call)
+Start time: 2023-03-27 15:09:00.432019
+Start name method: select_product_page
+
+End time: 2023-03-27 15:09:04.462168
+End name method: select_product_page
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: test_cart_page.py::test_cart (call)
+Start time: 2023-03-27 15:09:04.463166
+Start name method: test_cart
+
+End time: 2023-03-27 15:09:19.757945
+End name method: test_cart
+URL: https://nike-off.ru/
+
+-----
+
+-----
+Test: test_main_page.py::test_main_page (call)
+Start time: 2023-03-27 15:09:22.957804
+Start name method: general_test
+
+End time: 2023-03-27 15:10:55.132926
+End name method: general_test
+URL: https://nike-off.ru/?orderby=price-desc
+
+-----
+
+-----
+Test: test_main_page.py::test_main_page (call)
+Start time: 2023-03-27 15:10:55.133923
+Start name method: select_product1
+
+End time: 2023-03-27 15:10:58.654360
+End name method: select_product1
+URL: https://nike-off.ru/product/nike-air-force-1-07-black-white-ci0057_002/
+
+-----
+
+-----
+Test: test_main_page.py::test_main_page (call)
+Start time: 2023-03-27 15:10:58.654360
+Start name method: select_product_page
+
+End time: 2023-03-27 15:11:02.956900
+End name method: select_product_page
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: test_main_page.py::test_main_page (call)
+Start time: 2023-03-27 15:11:02.957906
+Start name method: product_confirmation
+
+End time: 2023-03-27 15:11:08.033591
+End name method: product_confirmation
+URL: https://nike-off.ru/
+
+-----
+
+-----
+Test: test_menu_lateral.py::test_menu_lateral (call)
+Start time: 2023-03-27 15:11:11.201793
+Start name method: test_lateral
+
+End time: 2023-03-27 15:11:27.049223
+End name method: test_lateral
+URL: https://nike-off.ru/product-category/blazer/
+
+-----
+
+-----
+Test: test_product_page.py::test_product_page (call)
+Start time: 2023-03-27 15:11:30.216885
+Start name method: checking_menu_blazer
+
+End time: 2023-03-27 15:11:37.505977
+End name method: checking_menu_blazer
+URL: https://nike-off.ru/product-category/blazer/
+
+-----
+
+-----
+Test: test_product_page.py::test_product_page (call)
+Start time: 2023-03-27 15:11:37.506976
+Start name method: select_product1
+
+End time: 2023-03-27 15:11:39.265146
+End name method: select_product1
+URL: https://nike-off.ru/product/internet-magazin-nike-sb-zoom-blazer-mid-premium-cool-grey-black-dc8903_001/
+
+-----
+
+-----
+Test: test_product_page.py::test_product_page (call)
+Start time: 2023-03-27 15:11:39.266159
+Start name method: test_product_page
+
+End time: 2023-03-27 15:11:52.844726
+End name method: test_product_page
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: test_product_page.py::test_product_page (call)
+Start time: 2023-03-27 15:11:52.844726
+Start name method: test_product_page
+
+End time: 2023-03-27 15:12:02.344575
+End name method: test_product_page
+URL: https://nike-off.ru/
+
+-----
+
+-----
+Test: test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-27 15:12:05.515816
+Start name method: checking_jordan_retro4
+
+End time: 2023-03-27 15:12:20.339084
+End name method: checking_jordan_retro4
+URL: https://nike-off.ru/product-category/jordan/retro-4/
+
+-----
+
+-----
+Test: test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-27 15:12:20.339084
+Start name method: select_product_3
+
+End time: 2023-03-27 15:12:22.127916
+End name method: select_product_3
+URL: https://nike-off.ru/product/nike-air-jordan-retro-4-kaws-black-930155_001/
+
+-----
+
+-----
+Test: test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-27 15:12:22.128920
+Start name method: select_product_page
+
+End time: 2023-03-27 15:12:28.031429
+End name method: select_product_page
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-27 15:12:28.031429
+Start name method: test_authorization
+
+End time: 2023-03-27 15:12:57.838965
+End name method: test_authorization
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-27 15:12:57.839965
+Start name method: delet_product
+
+End time: 2023-03-27 15:12:57.901951
+End name method: delet_product
+URL: https://nike-off.ru/cart/
+
+-----

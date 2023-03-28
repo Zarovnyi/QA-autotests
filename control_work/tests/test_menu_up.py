@@ -1,8 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from pages.menu_up import Menu_up
+import allure
 
-
+@allure.description("Test menu up")
 def menu_up():
 
     options = Options()          #убираем  знаки в терминале

@@ -1,0 +1,259 @@
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-28 23:21:03.354620
+Start name method: select_product
+
+End time: 2023-03-28 23:21:09.953863
+End name method: select_product
+URL: https://nike-off.ru/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-28 23:21:09.954864
+Start name method: select_product1
+
+End time: 2023-03-28 23:21:12.083318
+End name method: select_product1
+URL: https://nike-off.ru/product/nike-air-max-90-terrascape-black-lime-ice-dh2973_001/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-28 23:21:12.084318
+Start name method: select_product_page
+
+End time: 2023-03-28 23:21:16.077253
+End name method: select_product_page
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-28 23:21:16.078251
+Start name method: product_confirmation
+
+End time: 2023-03-28 23:21:20.334098
+End name method: product_confirmation
+URL: https://nike-off.ru/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-28 23:21:20.335103
+Start name method: authorization
+
+End time: 2023-03-28 23:21:29.686365
+End name method: authorization
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-28 23:21:29.687368
+Start name method: delet_product
+
+End time: 2023-03-28 23:21:35.428923
+End name method: delet_product
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: tests/test_cart_page.py::test_cart (call)
+Start time: 2023-03-28 23:21:38.701401
+Start name method: checking_menu_blazer
+
+End time: 2023-03-28 23:21:44.078138
+End name method: checking_menu_blazer
+URL: https://nike-off.ru/product-category/blazer/
+
+-----
+
+-----
+Test: tests/test_cart_page.py::test_cart (call)
+Start time: 2023-03-28 23:21:44.079138
+Start name method: select_product_3
+
+End time: 2023-03-28 23:21:45.495979
+End name method: select_product_3
+URL: https://nike-off.ru/product/nike-blazer-low-sacai-classic-green-dd1877_001/
+
+-----
+
+-----
+Test: tests/test_cart_page.py::test_cart (call)
+Start time: 2023-03-28 23:21:45.496981
+Start name method: select_product_page
+
+End time: 2023-03-28 23:21:51.705064
+End name method: select_product_page
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: tests/test_cart_page.py::test_cart (call)
+Start time: 2023-03-28 23:21:51.705064
+Start name method: test_cart
+
+End time: 2023-03-28 23:22:08.523195
+End name method: test_cart
+URL: https://nike-off.ru/
+
+-----
+
+-----
+Test: tests/test_main_page.py::test_main_page (call)
+Start time: 2023-03-28 23:22:11.683414
+Start name method: general_test
+
+End time: 2023-03-28 23:23:18.721092
+End name method: general_test
+URL: https://nike-off.ru/?orderby=price-desc
+
+-----
+
+-----
+Test: tests/test_main_page.py::test_main_page (call)
+Start time: 2023-03-28 23:23:18.722091
+Start name method: select_product1
+
+End time: 2023-03-28 23:23:21.418981
+End name method: select_product1
+URL: https://nike-off.ru/product/nike-air-jordan-4-military-black-dh6927_111/
+
+-----
+
+-----
+Test: tests/test_main_page.py::test_main_page (call)
+Start time: 2023-03-28 23:23:21.418981
+Start name method: select_product_page
+
+End time: 2023-03-28 23:23:24.568718
+End name method: select_product_page
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: tests/test_main_page.py::test_main_page (call)
+Start time: 2023-03-28 23:23:24.568718
+Start name method: product_confirmation
+
+End time: 2023-03-28 23:23:29.179146
+End name method: product_confirmation
+URL: https://nike-off.ru/
+
+-----
+
+-----
+Test: tests/test_menu_lateral.py::test_menu_lateral (call)
+Start time: 2023-03-28 23:23:32.429126
+Start name method: test_lateral
+
+
+-----
+Test: tests/test_product_page.py::test_product_page (call)
+Start time: 2023-03-28 23:24:10.881738
+Start name method: checking_menu_blazer
+
+End time: 2023-03-28 23:24:15.940757
+End name method: checking_menu_blazer
+URL: https://nike-off.ru/product-category/blazer/
+
+-----
+
+-----
+Test: tests/test_product_page.py::test_product_page (call)
+Start time: 2023-03-28 23:24:15.941756
+Start name method: select_product1
+
+End time: 2023-03-28 23:24:17.604088
+End name method: select_product1
+URL: https://nike-off.ru/product/internet-magazin-nike-sb-zoom-blazer-mid-premium-cool-grey-black-dc8903_001/
+
+-----
+
+-----
+Test: tests/test_product_page.py::test_product_page (call)
+Start time: 2023-03-28 23:24:17.605086
+Start name method: test_product_page
+
+End time: 2023-03-28 23:24:27.863622
+End name method: test_product_page
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: tests/test_product_page.py::test_product_page (call)
+Start time: 2023-03-28 23:24:27.864627
+Start name method: test_product_page
+
+End time: 2023-03-28 23:24:36.421772
+End name method: test_product_page
+URL: https://nike-off.ru/
+
+-----
+
+-----
+Test: tests/test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-28 23:24:39.594686
+Start name method: checking_jordan_retro4
+
+End time: 2023-03-28 23:24:46.071578
+End name method: checking_jordan_retro4
+URL: https://nike-off.ru/product-category/jordan/retro-4/
+
+-----
+
+-----
+Test: tests/test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-28 23:24:46.071578
+Start name method: select_product_3
+
+End time: 2023-03-28 23:24:51.104412
+End name method: select_product_3
+URL: https://nike-off.ru/product/nike-air-jordan-retro-4-kaws-black-930155_001/
+
+-----
+
+-----
+Test: tests/test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-28 23:24:51.105432
+Start name method: select_product_page
+
+End time: 2023-03-28 23:24:56.813518
+End name method: select_product_page
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: tests/test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-28 23:24:56.814505
+Start name method: test_authorization
+
+End time: 2023-03-28 23:25:26.827474
+End name method: test_authorization
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: tests/test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-28 23:25:26.827474
+Start name method: delet_product
+
+End time: 2023-03-28 23:25:26.891560
+End name method: delet_product
+URL: https://nike-off.ru/cart/
+
+-----

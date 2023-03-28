@@ -3,7 +3,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver import ActionChains
 from base.base_class import Base
-
+from utilities.logger import Logger
+import allure
 
 class Main_page(Base):
 
@@ -167,70 +168,75 @@ class Main_page(Base):
     # Methods
 
     def general_test(self):
-         self.driver.get(self.url)
-         self.driver.maximize_window()
-         self.get_current_url() #выводим сайт в терминал
-         self.get_scroll()
-         self.click_payment_section()
-         self.get_assert_url('https://nike-off.ru/pay/')
-         self.get_assert_title('Оплата')
-         self.click_general_page()
-         self.click_discounts_section() # акции и скидки кроссовки nike
-         self.get_assert_url('https://nike-off.ru/aktsii-i-skidki-krossovki-nike/')
-         self.get_assert_title('акции и скидки кроссовки nike')
-         self.click_general_page()
-         self.click_delivery()  # Доставка Nike Online
-         self.get_assert_url('https://nike-off.ru/dostavka-nike-online/')
-         self.get_assert_title('Доставка Nike Online')
-         self.click_general_page()
-         self.click_contacts()  # Контакты nike-off.ru интернет магазин
-         self.get_assert_url('https://nike-off.ru/kontakt/')
-         self.get_assert_title ('Контакты nike-off.ru интернет магазин')
-         self.click_general_page()
-         self.click_warranty_refund()  # Гарантия качества Nike интернет магазин
-         self.get_assert_url('https://nike-off.ru/quality/')
-         self.get_assert_title('Гарантия качества Nike интернет магазин')
-         self.click_general_page()
-         self.click_reviews()  # nike-off.ru отзывы
-         self.get_assert_url('https://nike-off.ru/nike-online-store-ru-otzyvy/')
-         self.get_assert_title('nike-off.ru отзывы')
-         self.click_general_page()
-         self.click_fag()  # Ответы на часто задаваемые вопросы
-         self.get_assert_url('https://nike-off.ru/otvety-na-chasto-zadavaemye-voprosy/')
-         self.get_assert_title('Ответы на часто задаваемые вопросы')
-         self.click_general_page()
-         self.click_entrance()  # Мой аккаунт
-         self.get_assert_url('https://nike-off.ru/my-account/')
-         self.get_assert_title('Мой аккаунт')
-         self.click_general_page()
-         self.get_scroll()
-         self.click_filter()  #
-         self.click_filter_by_popularity()  #
-         self.get_assert_url('https://nike-off.ru/?orderby=popularity')
-         self.get_scroll()
-         self.click_filter()  #
-         self.click_filter_rating()  #
-         self.get_assert_url('https://nike-off.ru/?orderby=rating')
-         self.get_scroll()
-         self.click_filter()  #
-         self.click_filter_date()  #
-         self.get_assert_url('https://nike-off.ru/?orderby=date')
-         self.get_scroll()
-         self.click_filter()  #
-         self.click_filter_price()  #
-         self.get_assert_url("https://nike-off.ru/?orderby=price")
-         self.get_scroll()
-         self.click_filter()  #
-         self.click_filter_price_desc()  #
-         self.get_assert_url('https://nike-off.ru/?orderby=price-desc')
-         self.get_scroll()
-         self.click_filter_size_36()
-         self.click_filter_size_43()
-         self.click_filter_size_48()
-
+        with allure.step("General test"):
+             Logger.add_start_step(method='general_test')
+             self.driver.get(self.url)
+             self.driver.maximize_window()
+             self.get_current_url() #выводим сайт в терминал
+             self.get_scroll()
+             self.click_payment_section()
+             self.get_assert_url('https://nike-off.ru/pay/')
+             self.get_assert_title('Оплата')
+             self.click_general_page()
+             self.click_discounts_section() # акции и скидки кроссовки nike
+             self.get_assert_url('https://nike-off.ru/aktsii-i-skidki-krossovki-nike/')
+             self.get_assert_title('акции и скидки кроссовки nike')
+             self.click_general_page()
+             self.click_delivery()  # Доставка Nike Online
+             self.get_assert_url('https://nike-off.ru/dostavka-nike-online/')
+             self.get_assert_title('Доставка Nike Online')
+             self.click_general_page()
+             self.click_contacts()  # Контакты nike-off.ru интернет магазин
+             self.get_assert_url('https://nike-off.ru/kontakt/')
+             self.get_assert_title ('Контакты nike-off.ru интернет магазин')
+             self.click_general_page()
+             self.click_warranty_refund()  # Гарантия качества Nike интернет магазин
+             self.get_assert_url('https://nike-off.ru/quality/')
+             self.get_assert_title('Гарантия качества Nike интернет магазин')
+             self.click_general_page()
+             self.click_reviews()  # nike-off.ru отзывы
+             self.get_assert_url('https://nike-off.ru/nike-online-store-ru-otzyvy/')
+             self.get_assert_title('nike-off.ru отзывы')
+             self.click_general_page()
+             self.click_fag()  # Ответы на часто задаваемые вопросы
+             self.get_assert_url('https://nike-off.ru/otvety-na-chasto-zadavaemye-voprosy/')
+             self.get_assert_title('Ответы на часто задаваемые вопросы')
+             self.click_general_page()
+             self.click_entrance()  # Мой аккаунт
+             self.get_assert_url('https://nike-off.ru/my-account/')
+             self.get_assert_title('Мой аккаунт')
+             self.click_general_page()
+             self.get_scroll()
+             self.click_filter()  #
+             self.click_filter_by_popularity()  #
+             self.get_assert_url('https://nike-off.ru/?orderby=popularity')
+             self.get_scroll()
+             self.click_filter()  #
+             self.click_filter_rating()  #
+             self.get_assert_url('https://nike-off.ru/?orderby=rating')
+             self.get_scroll()
+             self.click_filter()  #
+             self.click_filter_date()  #
+             self.get_assert_url('https://nike-off.ru/?orderby=date')
+             self.get_scroll()
+             self.click_filter()  #
+             self.click_filter_price()  #
+             self.get_assert_url("https://nike-off.ru/?orderby=price")
+             self.get_scroll()
+             self.click_filter()  #
+             self.click_filter_price_desc()  #
+             self.get_assert_url('https://nike-off.ru/?orderby=price-desc')
+             self.get_scroll()
+             self.click_filter_size_36()
+             self.click_filter_size_43()
+             self.click_filter_size_48()
+             Logger.add_end_step(url=self.driver.current_url, method='general_test')
 
     def select_product(self):
-         self.driver.get(self.url)
-         self.driver.maximize_window()
-         self.get_current_url() #выводим сайт в терминал
-         self.get_scroll()
+        with allure.step("Select product main page"):
+             Logger.add_start_step(method='select_product')
+             self.driver.get(self.url)
+             self.driver.maximize_window()
+             self.get_current_url() #выводим сайт в терминал
+             self.get_scroll()
+             Logger.add_end_step(url=self.driver.current_url, method='select_product')

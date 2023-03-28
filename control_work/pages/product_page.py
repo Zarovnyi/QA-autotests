@@ -3,6 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from base.base_class import Base
+from utilities.logger import Logger
+import allure
 
 
 class Product_page(Base):
@@ -161,32 +163,38 @@ class Product_page(Base):
     # Methods
 
     def test_product_page(self):
-        self.get_current_url() #выводим сайт в терминал
-        self.input_check_search("off white x nike air max 270 white")
-        self.input_check_search(Keys.RETURN)
-        self.get_assert_word(self.get_check_title(), 'off white x nike air max 270 white')
-        self.input_check_search("nike air Jordan 4 taupe haze DB0732_200") # Ввод данных в поиск
-        self.input_check_search(Keys.RETURN) # Нажимаем интер
-        self.click_clear_size()
-        self.click_select_size42()
-        self.click_select_size46()
-        self.click_select_size44()
-        self.click_select_size42()
-        self.click_size_chart()
-        self.get_delete(self.get_quantity_selection())
-        self.input_quantity_selection('2')
-        self.input_quantity_selection(Keys.RETURN)  # Нажимаем интер
-        self.click_reviews()
-        self.get_assert_word(self.get_assert_reviews(), 'Отзывы')
-        self.click_specifications()
-        self.get_assert_word(self.get_assert_specifications(), 'nike характеристики этой модели кроссовок')
-        self.click_quantity()
-        self.get_assert_word(self.get_assert_quantity(), 'nike обзор модели кроссовок')
-        self.click_buy_product()
-        self.click_transition_card()
+        with allure.step("Test product page"):
+            Logger.add_start_step(method='test_product_page')
+            self.get_current_url() #выводим сайт в терминал
+            self.input_check_search("off white x nike air max 270 white")
+            self.input_check_search(Keys.RETURN)
+            self.get_assert_word(self.get_check_title(), 'off white x nike air max 270 white')
+            self.input_check_search("nike air Jordan 4 taupe haze DB0732_200") # Ввод данных в поиск
+            self.input_check_search(Keys.RETURN) # Нажимаем интер
+            self.click_clear_size()
+            self.click_select_size42()
+            self.click_select_size46()
+            self.click_select_size44()
+            self.click_select_size42()
+            self.click_size_chart()
+            self.get_delete(self.get_quantity_selection())
+            self.input_quantity_selection('2')
+            self.input_quantity_selection(Keys.RETURN)  # Нажимаем интер
+            self.click_reviews()
+            self.get_assert_word(self.get_assert_reviews(), 'Отзывы')
+            self.click_specifications()
+            self.get_assert_word(self.get_assert_specifications(), 'nike характеристики этой модели кроссовок')
+            self.click_quantity()
+            self.get_assert_word(self.get_assert_quantity(), 'nike обзор модели кроссовок')
+            self.click_buy_product()
+            self.click_transition_card()
+            Logger.add_end_step(url=self.driver.current_url, method='test_product_page')
 
     def select_product_page(self):
-        self.get_current_url() #выводим сайт в терминал
-        self.click_buy_product()
-        self.click_transition_card()
-        self.get_assert_url('https://nike-off.ru/cart/')
+        with allure.step("Select product page"):
+            Logger.add_start_step(method='select_product_page')
+            self.get_current_url() #выводим сайт в терминал
+            self.click_buy_product()
+            self.click_transition_card()
+            self.get_assert_url('https://nike-off.ru/cart/')
+            Logger.add_end_step(url=self.driver.current_url, method='select_product_page')

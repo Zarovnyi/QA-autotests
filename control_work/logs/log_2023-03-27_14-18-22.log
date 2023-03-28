@@ -1,0 +1,221 @@
+
+-----
+Test: test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-27 14:18:23.342804
+Start name method: select_product
+
+End time: 2023-03-27 14:18:29.388852
+End name method: select_product
+URL: None
+
+-----
+
+-----
+Test: test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-27 14:18:29.390849
+Start name method: select_product1
+
+End time: 2023-03-27 14:18:31.465116
+End name method: select_product1
+URL: None
+
+-----
+
+-----
+Test: test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-27 14:18:31.466112
+Start name method: select_product_page
+
+End time: 2023-03-27 14:18:35.334597
+End name method: select_product_page
+URL: None
+
+-----
+
+-----
+Test: test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-27 14:18:35.335596
+Start name method: product_confirmation
+
+End time: 2023-03-27 14:18:39.894077
+End name method: product_confirmation
+URL: None
+
+-----
+
+-----
+Test: test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-27 14:18:39.895077
+Start name method: authorization
+
+End time: 2023-03-27 14:18:49.020649
+End name method: authorization
+URL: None
+
+-----
+
+-----
+Test: test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-27 14:18:49.021638
+Start name method: delet_product
+
+
+-----
+Test: test_cart_page.py::test_cart (call)
+Start time: 2023-03-27 14:19:20.342005
+Start name method: checking_menu_blazer
+
+End time: 2023-03-27 14:19:27.647739
+End name method: checking_menu_blazer
+URL: None
+
+-----
+
+-----
+Test: test_cart_page.py::test_cart (call)
+Start time: 2023-03-27 14:19:27.648742
+Start name method: select_product_3
+
+End time: 2023-03-27 14:19:29.378563
+End name method: select_product_3
+URL: None
+
+-----
+
+-----
+Test: test_cart_page.py::test_cart (call)
+Start time: 2023-03-27 14:19:29.379567
+Start name method: select_product_page
+
+End time: 2023-03-27 14:19:33.163266
+End name method: select_product_page
+URL: None
+
+-----
+
+-----
+Test: test_cart_page.py::test_cart (call)
+Start time: 2023-03-27 14:19:33.164267
+Start name method: test_cart
+
+End time: 2023-03-27 14:19:47.793603
+End name method: test_cart
+URL: None
+
+-----
+
+-----
+Test: test_main_page.py::test_main_page (call)
+Start time: 2023-03-27 14:19:51.023002
+Start name method: general_test
+
+
+-----
+Test: test_menu_lateral.py::test_menu_lateral (call)
+Start time: 2023-03-27 14:22:06.913006
+Start name method: test_lateral
+
+End time: 2023-03-27 14:22:23.518561
+End name method: test_lateral
+URL: None
+
+-----
+
+-----
+Test: test_product_page.py::test_product_page (call)
+Start time: 2023-03-27 14:22:26.677424
+Start name method: checking_menu_blazer
+
+End time: 2023-03-27 14:22:42.198538
+End name method: checking_menu_blazer
+URL: None
+
+-----
+
+-----
+Test: test_product_page.py::test_product_page (call)
+Start time: 2023-03-27 14:22:42.199546
+Start name method: select_product1
+
+End time: 2023-03-27 14:22:44.023255
+End name method: select_product1
+URL: None
+
+-----
+
+-----
+Test: test_product_page.py::test_product_page (call)
+Start time: 2023-03-27 14:22:44.024264
+Start name method: test_product_page
+
+End time: 2023-03-27 14:22:55.714601
+End name method: test_product_page
+URL: None
+
+-----
+
+-----
+Test: test_product_page.py::test_product_page (call)
+Start time: 2023-03-27 14:22:55.715582
+Start name method: test_product_page
+
+End time: 2023-03-27 14:23:04.968669
+End name method: test_product_page
+URL: None
+
+-----
+
+-----
+Test: test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-27 14:23:08.140389
+Start name method: checking_jordan_retro4
+
+End time: 2023-03-27 14:23:16.201715
+End name method: checking_jordan_retro4
+URL: None
+
+-----
+
+-----
+Test: test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-27 14:23:16.201715
+Start name method: select_product_3
+
+End time: 2023-03-27 14:23:17.929110
+End name method: select_product_3
+URL: None
+
+-----
+
+-----
+Test: test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-27 14:23:17.930124
+Start name method: select_product_page
+
+End time: 2023-03-27 14:23:21.276581
+End name method: select_product_page
+URL: None
+
+-----
+
+-----
+Test: test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-27 14:23:21.276581
+Start name method: test_authorization
+
+End time: 2023-03-27 14:23:41.138655
+End name method: test_authorization
+URL: None
+
+-----
+
+-----
+Test: test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-27 14:23:41.139657
+Start name method: delet_product
+
+End time: 2023-03-27 14:23:41.200166
+End name method: delet_product
+URL: None
+
+-----

@@ -1,0 +1,28 @@
+Enter system
+Start test
+Start Test 1
+Current url https://nike-off.ru/
+scroll
+Current url https://nike-off.ru/
+Выбираем первый товар
+Current url https://nike-off.ru/product/nike-air-max-90-terrascape-black-lime-ice-dh2973_001/
+Нашимаем на конпку купить
+Переходим в корзину
+Good value url
+Current url https://nike-off.ru/cart/
+Good value url
+1
+Good final_price 5480 ₽
+Удаление товара
+Вернутся в магазин
+Current url https://nike-off.ru/
+Вход в личный кабинет
+Input user name
+Input password
+Click login button
+Переход в Корзину
+Current url https://nike-off.ru/cart/
+Good value url
+Good value word
+Finish test
+Exit system

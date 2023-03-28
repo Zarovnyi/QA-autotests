@@ -4,7 +4,9 @@ from pages.cart_page import Cart_page
 from pages.product_page import Product_page
 from pages.product_selection import Product_selection
 from pages.main_page import Main_page
+import allure
 
+@allure.description("Test main page")
 def test_main_page(set_up, set_group):
 
     options = Options()          #убираем знаки в терминале

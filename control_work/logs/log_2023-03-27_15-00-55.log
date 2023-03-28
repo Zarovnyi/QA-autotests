@@ -1,0 +1,36 @@
+
+-----
+Test: test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-27 15:00:57.000886
+Start name method: select_product
+
+
+-----
+Test: test_cart_page.py::test_cart (call)
+Start time: 2023-03-27 15:01:05.999090
+Start name method: checking_menu_blazer
+
+
+-----
+Test: test_main_page.py::test_main_page (call)
+Start time: 2023-03-27 15:01:14.641584
+Start name method: general_test
+
+
+-----
+Test: test_menu_lateral.py::test_menu_lateral (call)
+Start time: 2023-03-27 15:02:21.625178
+Start name method: test_lateral
+
+
+-----
+Test: test_product_page.py::test_product_page (call)
+Start time: 2023-03-27 15:02:41.870600
+Start name method: checking_menu_blazer
+
+
+-----
+Test: test_сlient_information_page.py::test_сlient_information_page (call)
+Start time: 2023-03-27 15:02:50.594113
+Start name method: checking_jordan_retro4
+

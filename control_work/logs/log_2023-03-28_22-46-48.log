@@ -1,0 +1,61 @@
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-28 22:46:49.943575
+Start name method: select_product
+
+End time: 2023-03-28 22:46:55.626277
+End name method: select_product
+URL: https://nike-off.ru/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-28 22:46:55.628262
+Start name method: select_product1
+
+End time: 2023-03-28 22:46:57.444803
+End name method: select_product1
+URL: https://nike-off.ru/product/nike-air-max-90-terrascape-black-lime-ice-dh2973_001/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-28 22:46:57.445801
+Start name method: select_product_page
+
+End time: 2023-03-28 22:47:06.933312
+End name method: select_product_page
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-28 22:47:06.934326
+Start name method: product_confirmation
+
+End time: 2023-03-28 22:47:11.607183
+End name method: product_confirmation
+URL: https://nike-off.ru/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-28 22:47:11.607183
+Start name method: authorization
+
+End time: 2023-03-28 22:47:24.045938
+End name method: authorization
+URL: https://nike-off.ru/cart/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-03-28 22:47:24.046942
+Start name method: delet_product
+

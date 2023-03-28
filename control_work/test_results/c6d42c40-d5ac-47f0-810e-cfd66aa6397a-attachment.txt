@@ -1,0 +1,36 @@
+Enter system
+Start test
+Start Test 5
+Current url https://nike-off.ru/
+Переходим в боковое меню
+Открываем в разделе jordan выпадающее меню
+Переходим в разделы jordan retro4
+Проверка названия раздела 'Nike Air Jordan 4 Retro' успешна
+Current url https://nike-off.ru/product-category/jordan/retro-4/
+Выбираем третий товар
+Current url https://nike-off.ru/product/nike-air-jordan-retro-4-kaws-black-930155_001/
+Нашимаем на конпку купить
+Переходим в корзину
+Good value url
+Current url https://nike-off.ru/
+Вход в личный кабинет
+Input user name
+Input password
+Click login button
+Переход в заказы
+Проверка названия заголовка 'Заказы' успешна
+Переход в загрузки
+Проверка названия заголовка 'Загрузки' успешна
+Переход в раздел Адрес
+Проверка названия заголовка 'Адрес' успешна
+Переход в Анкету
+Проверка названия заголовка 'Анкета' успешна
+Выход из личного кабинета
+Проверка названия заголовка 'Мой аккаунт' успешна
+Click login button
+Переход в Корзину
+Current url https://nike-off.ru/cart/
+Good value url
+Good value word
+Finish test
+Exit system

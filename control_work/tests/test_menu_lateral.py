@@ -1,7 +1,9 @@
 from pages.menu_lateral import Menu_lateral
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+import allure
 
+@allure.description("Test menu lateral")
 def test_menu_lateral():
 
     options = Options()          #убираем знаки в терминале

@@ -1,7 +1,9 @@
+import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from base.base_class import Base
+from utilities.logger import Logger
 
 
 class Product_selection(Base):
@@ -60,9 +62,15 @@ class Product_selection(Base):
     # Methods
 
     def select_product1(self):
-        self.get_current_url() #выводим сайт в терминал
-        self.click_select_product_1()
+        with allure.step("Select product1"):
+            Logger.add_start_step(method='select_product1')
+            self.get_current_url() #выводим сайт в терминал
+            self.click_select_product_1()
+            Logger.add_end_step(url=self.driver.current_url, method='select_product1')
 
     def select_product_3(self):
-        self.get_current_url() #выводим сайт в терминал
-        self.click_select_product_3()
+        with allure.step("Select product 3"):
+            Logger.add_start_step(method='select_product_3')
+            self.get_current_url() #выводим сайт в терминал
+            self.click_select_product_3()
+            Logger.add_end_step(url=self.driver.current_url, method='select_product_3')

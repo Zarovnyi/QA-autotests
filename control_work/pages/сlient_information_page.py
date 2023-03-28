@@ -2,6 +2,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from base.base_class import Base
+from utilities.logger import Logger
+import allure
 
 
 class Login_page(Base):
@@ -154,32 +156,38 @@ class Login_page(Base):
     # Methods
 
     def test_authorization(self):
-        self.driver.get(self.url) #открываем сайт
-        self.driver.maximize_window() # расширяем на весь экран
-        self.get_current_url() #выводим сайт в терминал
-        self.input_personal_account()
-        self.input_user_name("Zarovnyaev92@yandex.ru") #вводим логин
-        self.input_password("Z22101992!") #вводим пароль
-        self.click_login_button() #нажимаем кнопку
-        self.click_orders()
-        self.get_assert_title('Заказы')
-        self.click_downloads()
-        self.get_assert_title('Загрузки')
-        self.click_addresses()
-        self.get_assert_title('Адрес')
-        self.click_questionnaire()
-        self.get_assert_title('Анкета')
-        self.click_exit()
-        self.get_assert_title('Мой аккаунт')
-        self.click_login_button()
-        self.click_basket()
+        with allure.step("Test authorization"):
+            Logger.add_start_step(method = 'test_authorization')
+            self.driver.get(self.url) #открываем сайт
+            self.driver.maximize_window() # расширяем на весь экран
+            self.get_current_url() #выводим сайт в терминал
+            self.input_personal_account()
+            self.input_user_name("Zarovnyaev92@yandex.ru") #вводим логин
+            self.input_password("Z22101992!") #вводим пароль
+            self.click_login_button() #нажимаем кнопку
+            self.click_orders()
+            self.get_assert_title('Заказы')
+            self.click_downloads()
+            self.get_assert_title('Загрузки')
+            self.click_addresses()
+            self.get_assert_title('Адрес')
+            self.click_questionnaire()
+            self.get_assert_title('Анкета')
+            self.click_exit()
+            self.get_assert_title('Мой аккаунт')
+            self.click_login_button()
+            self.click_basket()
+            Logger.add_end_step(url = self.driver.current_url, method = 'test_authorization')
 
     def authorization(self):
-        self.driver.get(self.url)  # открываем сайт
-        self.driver.maximize_window()  # расширяем на весь экран
-        self.get_current_url()  # выводим сайт в терминал
-        self.input_personal_account()
-        self.input_user_name("Zarovnyaev92@yandex.ru")  # вводим логин
-        self.input_password("Z22101992!")  # вводим пароль
-        self.click_login_button()  # нажимаем кнопку
-        self.click_basket() # Переходим в корзину
+        with allure.step("Authorization"):
+            Logger.add_start_step(method='authorization')
+            self.driver.get(self.url)  # открываем сайт
+            self.driver.maximize_window()  # расширяем на весь экран
+            self.get_current_url()  # выводим сайт в терминал
+            self.input_personal_account()
+            self.input_user_name("Zarovnyaev92@yandex.ru")  # вводим логин
+            self.input_password("Z22101992!")  # вводим пароль
+            self.click_login_button()  # нажимаем кнопку
+            self.click_basket() # Переходим в корзину
+            Logger.add_end_step(url = self.driver.current_url, method='authorization')

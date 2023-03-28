@@ -2,6 +2,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from base.base_class import Base
+from utilities.logger import Logger
+import allure
 
 
 class Menu_lateral(Base):
@@ -86,48 +88,63 @@ class Menu_lateral(Base):
     # Methods
 
     def test_lateral(self):
-        self.driver.get(self.url)
-        self.get_current_url()  # выводим сайт в терминал
-        self.click_select_menu_lateral()
-        self.click_select_jordan_menu()
-        self.click_jordan_menu_retro4()
-        self.get_assert_title_chapter('Nike Air Jordan 4 Retro')
-        self.click_select_menu_lateral()
-        self.click_menu_sb_dunk()
-        self.get_assert_title_chapter('sb dunk')
-        self.click_select_menu_lateral()
-        self.click_menu_air_max()
-        self.click_menu_air_max()
-        self.get_assert_title_chapter('Nike Air Max')
-        self.click_select_menu_lateral()
-        self.click_menu_blazer()
-        self.get_assert_title_chapter('Nike Blazer')
+        with allure.step("Test lateral"):
+            Logger.add_start_step(method='test_lateral')
+            self.driver.get(self.url)
+            self.get_current_url()  # выводим сайт в терминал
+            self.click_select_menu_lateral()
+            self.click_select_jordan_menu()
+            self.click_jordan_menu_retro4()
+            self.get_assert_title_chapter('Nike Air Jordan 4 Retro')
+            self.click_select_menu_lateral()
+            self.click_menu_sb_dunk()
+            self.get_assert_title_chapter('sb dunk')
+            self.click_select_menu_lateral()
+            self.click_menu_air_max()
+            self.click_menu_air_max()
+            self.get_assert_title_chapter('Nike Air Max')
+            self.click_select_menu_lateral()
+            self.click_menu_blazer()
+            self.get_assert_title_chapter('Nike Blazer')
+            Logger.add_end_step(url=self.driver.current_url, method='test_lateral')
 
     def checking_jordan_retro4(self):
-        self.driver.get(self.url)
-        self.get_current_url()  # выводим сайт в терминал
-        self.click_select_menu_lateral()
-        self.click_select_jordan_menu()
-        self.click_jordan_menu_retro4()
-        self.get_assert_title_chapter('Nike Air Jordan 4 Retro')
+        with allure.step("Checking jordan retro4"):
+            Logger.add_start_step(method='checking_jordan_retro4')
+            self.driver.get(self.url)
+            self.get_current_url()  # выводим сайт в терминал
+            self.click_select_menu_lateral()
+            self.click_select_jordan_menu()
+            self.click_jordan_menu_retro4()
+            self.get_assert_title_chapter('Nike Air Jordan 4 Retro')
+            Logger.add_end_step(url=self.driver.current_url, method='checking_jordan_retro4')
 
     def checking_sb_dunk(self):
-        self.driver.get(self.url)
-        self.get_current_url()  # выводим сайт в терминал
-        self.click_select_menu_lateral()
-        self.click_menu_sb_dunk()
-        self.get_assert_title_chapter('sb dunk')
+        with allure.step("Checking sb dunk"):
+            Logger.add_start_step(method='checking_sb_dunk')
+            self.driver.get(self.url)
+            self.get_current_url()  # выводим сайт в терминал
+            self.click_select_menu_lateral()
+            self.click_menu_sb_dunk()
+            self.get_assert_title_chapter('sb dunk')
+            Logger.add_end_step(url=self.driver.current_url, method='checking_sb_dunk')
 
     def checking_air_max(self):
-        self.driver.get(self.url)
-        self.get_current_url()  # выводим сайт в терминал
-        self.click_select_menu_lateral()
-        self.click_menu_air_max()
-        self.get_assert_title_chapter('Nike Air Max')
+        with allure.step("Checking air max"):
+            Logger.add_start_step(method='checking_air_max')
+            self.driver.get(self.url)
+            self.get_current_url()  # выводим сайт в терминал
+            self.click_select_menu_lateral()
+            self.click_menu_air_max()
+            self.get_assert_title_chapter('Nike Air Max')
+            Logger.add_end_step(url=self.driver.current_url, method='checking_air_max')
 
     def checking_menu_blazer(self):
-        self.driver.get(self.url)
-        self.get_current_url()  # выводим сайт в терминал
-        self.click_select_menu_lateral()
-        self.click_menu_blazer()
-        self.get_assert_title_chapter('Nike Blazer')
+        with allure.step("Checking menu blazer"):
+            Logger.add_start_step(method='checking_menu_blazer')
+            self.driver.get(self.url)
+            self.get_current_url()  # выводим сайт в терминал
+            self.click_select_menu_lateral()
+            self.click_menu_blazer()
+            self.get_assert_title_chapter('Nike Blazer')
+            Logger.add_end_step(url=self.driver.current_url, method='checking_menu_blazer')

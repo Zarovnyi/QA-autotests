@@ -2,6 +2,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from base.base_class import Base
+from utilities.logger import Logger
+import allure
 
 
 class Cart_page(Base):
@@ -108,35 +110,47 @@ class Cart_page(Base):
     # Methods
 
     def test_cart(self):
-        self.get_current_url() #выводим сайт в терминал
-        self.driver.maximize_window()
-        self.get_delete(self.get_quantity())
-        self.input_quantity('2')
-        self.get_enter(self.get_quantity())
-        self.click_general_page()
-        self. click_up_cart()
-        self.get_price_comparison(self.get_assert_prise(),  self.get_up_cart(), self.get_assert_result()) # цена товара, количество, общая цена
-        self.click_delete_product()
-        self.click_cancel()
-        self.click_delete_product()
-        self.click_back_store()
+        with allure.step("Test cart"):
+            Logger.add_start_step(method='test_cart')
+            self.get_current_url() #выводим сайт в терминал
+            self.driver.maximize_window()
+            self.get_delete(self.get_quantity()) # Удаляем количество
+            self.input_quantity('2')  # Вводим количество
+            self.get_enter(self.get_quantity())
+            self.click_general_page()
+            self. click_up_cart()
+            self.get_price_comparison(self.get_assert_prise(),  self.get_up_cart(), self.get_assert_result()) # цена товара, количество, общая цена
+            self.click_delete_product()
+            self.click_cancel()
+            self.click_delete_product()
+            self.click_back_store()
+            Logger.add_end_step(url=self.driver.current_url, method='test_cart')
 
     def product_confirmation(self):
-        self.get_current_url()  # выводим сайт в терминал
-        self.get_assert_url('https://nike-off.ru/cart/')
-        self.get_price_comparison(self.get_assert_prise(), self.get_up_cart(), self.get_assert_result())
-        self.click_delete_product()
-        self.click_back_store()
+        with allure.step("Product confirmation"):
+            Logger.add_start_step(method='product_confirmation')
+            self.get_current_url()  # выводим сайт в терминал
+            self.get_assert_url('https://nike-off.ru/cart/')
+            self.get_price_comparison(self.get_assert_prise(), self.get_up_cart(), self.get_assert_result())
+            self.click_delete_product()
+            self.click_back_store()
+            Logger.add_end_step(url=self.driver.current_url, method='product_confirmation')
 
     def delet_product(self):
-        self.get_current_url()  # выводим сайт в терминал
-        self.get_assert_url('https://nike-off.ru/cart/')
-        self.get_assert_word(self.get_assert_delete(), "Ваша корзина пока пуста.")
+        with allure.step("Delet product"):
+            Logger.add_start_step(method='delet_product')
+            self.get_current_url()  # выводим сайт в терминал
+            self.get_assert_url('https://nike-off.ru/cart/')
+            self.get_assert_word(self.get_assert_delete(), "Ваша корзина пока пуста.")
+            Logger.add_end_step(url=self.driver.current_url, method='delet_product')
 
     def test_product_page(self):
-        self.get_price_comparison(self.get_assert_prise(), self.get_up_cart(),self.get_assert_result())  # цена товара, количество, общая цена
-        self.click_delete_product()
-        self.click_cancel()
-        self.get_assert_word(self.get_assert_title(), "nike air Jordan 4 taupe haze DB0732_200 - 42 евро / 26,5 см.")
-        self.click_delete_product()
-        self.click_back_store()
+        with allure.step("Test product page"):
+            Logger.add_start_step(method='test_product_page')
+            self.get_price_comparison(self.get_assert_prise(), self.get_up_cart(),self.get_assert_result())  # цена товара, количество, общая цена
+            self.click_delete_product()
+            self.click_cancel()
+            self.get_assert_word(self.get_assert_title(), "nike air Jordan 4 taupe haze DB0732_200 - 42 евро / 26,5 см.")
+            self.click_delete_product()
+            self.click_back_store()
+            Logger.add_end_step(url=self.driver.current_url, method='test_product_page')

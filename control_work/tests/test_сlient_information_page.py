@@ -5,7 +5,9 @@ from pages.menu_lateral import Menu_lateral
 from pages.product_page import Product_page
 from pages.product_selection import Product_selection
 from pages.сlient_information_page import Login_page
+import allure
 
+@allure.description("Test сlient information page")
 def test_сlient_information_page(set_up, set_group):
 
     options = Options()          #убираем знаки в терминале

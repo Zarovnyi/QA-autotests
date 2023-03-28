@@ -1,0 +1,23 @@
+Start Test 2
+Current url https://nike-off.ru/
+Переходим в боковое меню
+Переходим в разделы  blazer
+Проверка названия раздела 'Nike Blazer' успешна
+Current url https://nike-off.ru/product-category/blazer/
+Выбираем третий товар
+Current url https://nike-off.ru/product/nike-blazer-low-sacai-classic-green-dd1877_001/
+Нашимаем на конпку купить
+Переходим в корзину
+Good value url
+Current url https://nike-off.ru/cart/
+Удаляем из поля данные
+Тест количества
+Нажимаем интере
+Переходим на главную страницу
+Нажимаем кнопку корзину
+2
+Good final_price 11160 ₽
+Удаление товара
+Отменить удаление товара
+Удаление товара
+Вернутся в магазин
